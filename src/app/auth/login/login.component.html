@@ -1,0 +1,70 @@
+<section class="fxt-template-animation fxt-template-layout25">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-12 fxt-bg-gradient">
+                <div class="fxt-header">
+                    <div class="fxt-top-content">
+                        <div class="fxt-transformY-50 fxt-transition-delay-1">
+                            <!-- <a href="login-25.html" class="fxt-logo"><img src="img/logo-25.png" alt="Logo"></a> -->
+                        </div>
+                        <div class="fxt-transformY-50 fxt-transition-delay-2">
+                            <h1>Open Authentication</h1>
+                        </div>
+                        <div class="fxt-transformY-50 fxt-transition-delay-3">
+                            <p>Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada.</p>
+                        </div>
+                    </div>
+                    <div class="fxt-bottom-content">
+                        <div class="fxt-transformY-50 fxt-transition-delay-11">
+                            <p>Don't have an account? <a href="javascript:void(0)" routerLink="/auth/register" class="switcher-text inline-text">Register</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 fxt-bg-color">
+                <div class="fxt-content">
+                    <div class="fxt-form">
+                        <div class="fxt-transformY-50 fxt-transition-delay-12">
+                            <h2>Login into your account</h2>
+                        </div>
+
+                        <form [formGroup]="loginForm">
+
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-14">
+                                    <input type="email" class="form-control" formControlName="email" name="email" placeholder="Email Address" required="required">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-15">
+                                    <input id="password" type="password" class="form-control"  formControlName="password" name="password" placeholder="********" required="required">
+                                    <i toggle="#password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-16">
+                                    <div class="fxt-checkbox-area">
+                                        <div class="checkbox">
+                                            <input id="checkbox1" type="checkbox">
+                                            <label for="checkbox1">Keep me logged in</label>
+                                        </div>
+                                        <a href="javascript:void(0)" routerLink="/auth/forgot-password" class="switcher-text2">Forgot Password</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-17">
+                                    <button type="submit" class="fxt-btn-fill"  (click)="login()">
+                                        <span>{{ connecting.creating ? 'Please wait...' : connectingErrors.creating ? 'Try Again' : 'Log in'}}</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
