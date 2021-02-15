@@ -26,6 +26,24 @@ export class AuthService {
     });
   }
 
+  submitForgotpassword(body: any) {
+    return this.http.post(environment.API_URL + '/api/auth/forgot-password', body, {
+      observe: 'body'
+    });
+  }
+
+  ValidatePasswordToken(body: any) {
+    return this.http.post(  environment.API_URL + '/validate-password-token', body, {
+      observe: 'body'
+    });
+  }
+
+  submitResetPassword(body: any) {
+    return this.http.post(environment.API_URL + '/api/auth/new-password', body, {
+      observe: 'body'
+    });
+  }
+
   deleteToken() {
     localStorage.removeItem('auth-token');
   }
