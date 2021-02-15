@@ -33,7 +33,7 @@ export class AuthService {
   }
 
   ValidatePasswordToken(body: any) {
-    return this.http.post(  environment.API_URL + '/validate-password-token', body, {
+    return this.http.post(  environment.API_URL + '/api/auth/validate-password-token', body, {
       observe: 'body'
     });
   }

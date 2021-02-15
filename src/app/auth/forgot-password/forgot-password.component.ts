@@ -59,7 +59,7 @@ export class ForgotPasswordComponent implements OnInit {
       this.authService.submitForgotpassword(this.forgotpasswordForm.value).subscribe(
         (data: any) => {
           this.messageService.success('Email Sent', null);
-          this.router.navigate(['password-request-sent']).then();
+          this.router.navigate(['auth/reset-password-request-sent']).then();
         },
         error => {
           this.messageService.error('Something went wrong', 'Error!');
