@@ -27,7 +27,7 @@ export class AuthService {
   }
 
   submitForgotpassword(body: any) {
-    return this.http.post(environment.API_URL + '/api/auth/forgot-password', body, {
+    return this.http.post(environment.API_URL + '/api/auth/forgotpassword', body, {
       observe: 'body'
     });
   }
