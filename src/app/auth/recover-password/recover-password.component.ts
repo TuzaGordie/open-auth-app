@@ -79,7 +79,7 @@ export class RecoverPasswordComponent implements OnInit {
       this.authService.submitResetPassword(this.resetPasswordForm.value).subscribe(
         (data: any) => {
           this.messageService.success('Password Reset Successful', 'Success!');
-          this.router.navigate(['login']).then();
+          this.router.navigate(['auth/login']).then();
         },
         error => {
           this.messageService.error('Something went wrong', 'Error!');
