@@ -1,23 +1,36 @@
 <section class="fxt-template-animation fxt-template-layout25">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 fxt-bg-gradient">
-                <div class="fxt-header">
-                    <div class="fxt-top-content">
-                        <div class="fxt-transformY-50 fxt-transition-delay-2" *ngIf="profile">
-                            <h1>{{profile.name}}</h1>
-                        </div>
-                        <div class="fxt-transformY-50 fxt-transition-delay-3">
-                            <p>Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada.</p>
-                        </div>
-                    </div>
-                    <div class="fxt-bottom-content">
-                        <div class="fxt-transformY-50 fxt-transition-delay-11">
-                            <button class="btn" (click)="logout()">Log out</button>
-                        </div>
-                    </div>
-                </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 fxt-bg-gradient">
+        <div class="fxt-header">
+          <div class="fxt-top-content">
+            <div
+              class="fxt-transformY-50 fxt-transition-delay-2"
+              *ngIf="profile"
+            >
+              <h1>{{ profile.name }}</h1>
             </div>
+            <div class="fxt-transformY-50 fxt-transition-delay-3">
+              <p>
+                Open Authorization is an open standard authorization web app for
+                token-based authorization on the internet. O Auth enables an end
+                user's account information to be used by third-party services,
+                such as Facebook and Google, without exposing the user's account
+                credentials to the third party. It acts as an intermediary on
+                behalf of the end user, providing the third-party service with
+                an access token that authorizes specific account information to
+                be shared. The process for obtaining the token is called an
+                authorization flow.
+              </p>
+            </div>
+          </div>
+          <div class="fxt-bottom-content">
+            <div class="fxt-transformY-50 fxt-transition-delay-11">
+              <button class="btn" (click)="logout()">Log out</button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
