@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   APP_URL: 'http://localhost:4200',
-  // API_URL: 'https://open-auth-api.herokuapp.com'
-  API_URL: 'http://localhost:3000'
+  API_URL: 'https://open-auth-api.herokuapp.com'
+  // API_URL: 'http://localhost:3000'
 };
 
 /*
